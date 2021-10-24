@@ -19,7 +19,5 @@ def index():
    res = cursor.execute('SELECT * FROM todo')  
    return render_template('index.html', todo_list=res.fetchall())
 
-    # return render_template('index.html', title='flask test') #変更
-
 if __name__ == '__main__':
     app.run(debug=True)
